@@ -1,41 +1,34 @@
 # Conversational Pattern Lab
 
-A browser-based educational environment for conversational AI interaction design.
+A free educational prototype exploring conversational interaction decisions.
 
-## Live site
+## Public site
 
-- [Interactive demonstrations](https://afroxyz.github.io/conversational-pattern-lab/)
-- [Pattern Library and Composer](https://afroxyz.github.io/conversational-pattern-lab/library.html)
+https://afroxyz.github.io/conversational-pattern-lab/
 
-## Features
+## What's included
 
-- Six interactive decision demonstrations: clarification, disambiguation, confirmation, correction, repair, and task resumption.
-- Searchable catalogue of **71 proposed patterns across 12 families** in `patterns.json`.
-- Square-bracket behavioural anatomy for each pattern.
-- Design-time Pattern Composer: add, reorder, remove, and export sequences to JSON.
-- Static hosting, no build step, no account or API key required.
+Six interactive introductory demonstrations covering clarification, disambiguation, confirmation, correction, repair, and task resumption. These illustrate choices, feedback, and simplified conversational state.
 
-## Pattern notation
+## Scope
 
-`[Move]` denotes a behavioural move, and `[Move A] → [Move B]` denotes an ordered sequence. These are design specifications, not phrases the assistant must recite.
+The public demonstration does not include the complete pattern taxonomy, internal pattern identifiers, searchable pattern library, advanced orchestration methodology, implementation rules, proprietary evaluation systems, or commercial course materials.
 
-## Limitations
+The demonstrations are scripted educational examples, not a live AI agent, production decision engine, or evidence of real service transactions.
 
-This is an **educational prototype**. The catalogue is a proposed taxonomy, not a validated industry standard. The composer is a manual design tool, not an AI planner or execution engine. It does not enforce policy, safety, authorisation, or tool-result verification. Scenarios are fictional and no live transactions occur.
+## Publication policy
 
-## Project files
+**Public:** introductory educational examples, simplified demonstrations, general explanations, and approved course links.
 
-- `index.html` — original six interactive demonstrations
-- `library.html` — searchable catalogue and pattern composer
-- `patterns.json` — structured catalogue and square-bracket moves
+**Restricted:** pattern families and taxonomy, catalogue identifiers and pattern names as an organised library, full square-bracket catalogue, searchable library, advanced behaviour orchestration methods, detailed specifications, course assessments and instructor materials, evaluation datasets, scoring algorithms, and proprietary implementations.
 
-## Run locally
+Do not commit restricted assets to this public repository, including in source files, client-side bundles, test fixtures, documentation, or branches.
 
-Serve the repository from a local HTTP server (for example, `python -m http.server 8000`) and open `http://localhost:8000`. A server is required for the catalogue page because it loads `patterns.json` using `fetch`.
+Previously published files may remain in Git history or third-party copies. Removing files from the latest branch does not undo past disclosure.
 
-## Roadmap
+## Running locally
 
-Add per-pattern entry and exit conditions, failure and recovery rules, scenario-specific examples, schema validation, a multi-turn state simulator, pattern evaluation rubrics and a policy-aware behaviour-selection engine.
+Open `index.html` in a browser.
 
 ## Attribution and licensing
 
