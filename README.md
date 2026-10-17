@@ -1,33 +1,42 @@
 # Conversational Pattern Lab
 
-An interactive, static teaching lab for **six conversational AI interaction patterns**: clarification, disambiguation, confirmation, correction, repair and task resumption.
+A browser-based educational environment for conversational AI interaction design.
 
-## Try the lab
+## Live site
 
-Once GitHub Pages is enabled: https://afroxyz.github.io/conversational-pattern-lab/
+- [Interactive demonstrations](https://afroxyz.github.io/conversational-pattern-lab/)
+- [Pattern Library and Composer](https://afroxyz.github.io/conversational-pattern-lab/library.html)
 
-## How it works
+## Features
 
-Choose a pattern, read the fictional user request, select the assistant response you think is appropriate, and click **Test response**. The lab shows feedback, the conversational state change, the trigger, exit condition and an evaluation question.
+- Six interactive decision demonstrations: clarification, disambiguation, confirmation, correction, repair, and task resumption.
+- Searchable catalogue of **71 proposed patterns across 12 families** in `patterns.json`.
+- Square-bracket behavioural anatomy for each pattern.
+- Design-time Pattern Composer: add, reorder, remove, and export sequences to JSON.
+- Static hosting, no build step, no account or API key required.
 
-The scenarios are **deterministic teaching examples**, not a live language model or banking/travel integration. No data is transmitted or stored.
+## Pattern notation
+
+`[Move]` denotes a behavioural move, and `[Move A] → [Move B]` denotes an ordered sequence. These are design specifications, not phrases the assistant must recite.
+
+## Limitations
+
+This is an **educational prototype**. The catalogue is a proposed taxonomy, not a validated industry standard. The composer is a manual design tool, not an AI planner or execution engine. It does not enforce policy, safety, authorisation, or tool-result verification. Scenarios are fictional and no live transactions occur.
+
+## Project files
+
+- `index.html` — original six interactive demonstrations
+- `library.html` — searchable catalogue and pattern composer
+- `patterns.json` — structured catalogue and square-bracket moves
 
 ## Run locally
 
-Open `index.html` in a modern web browser. No build step, API key or external dependency is required.
+Serve the repository from a local HTTP server (for example, `python -m http.server 8000`) and open `http://localhost:8000`. A server is required for the catalogue page because it loads `patterns.json` using `fetch`.
 
-## Publishing
+## Roadmap
 
-In GitHub: **Settings → Pages → Deploy from a branch → main → /(root) → Save**.
+Add per-pattern entry and exit conditions, failure and recovery rules, scenario-specific examples, schema validation, a multi-turn state simulator, pattern evaluation rubrics and a policy-aware behaviour-selection engine.
 
-## Design principles
+## Attribution and licensing
 
-Patterns are reusable interaction strategies, not reusable sentences. Evaluate pattern selection and state integrity as well as response wording. Distinguish user intent from permission to act, and proposed action from verified completion.
-
-## Next steps
-
-Pattern Composer, user-authored scenarios, rubric-based evaluation, accessible keyboard-first walkthroughs and exportable pattern specifications.
-
-## License
-
-Copyright belongs to the repository owner; no open-source license is granted unless one is added.
+Copyright remains with the repository owner. No open-source licence is granted unless one is added.
